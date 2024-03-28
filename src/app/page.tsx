@@ -8,6 +8,9 @@ export default async function Home() {
     <main>
       {latest?.type}
       <TestChart />
+      {/* <TestChart />
+      <TestChart />
+      <TestChart /> */}
     </main>
   );
 }
