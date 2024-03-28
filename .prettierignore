@@ -1,0 +1,6 @@
+build
+coverage
+.prettierignore
+public/
+.gitignore
+.husky/
