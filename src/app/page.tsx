@@ -1,4 +1,5 @@
 import { api } from "@/trpc/server";
+import TestChart from "./test-chart";
 
 export default async function Home() {
   // const hello = await api.ee.hello({ text: "world" });
@@ -10,6 +11,7 @@ export default async function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
       {latest?.name}
+      <TestChart />
     </main>
   );
 }

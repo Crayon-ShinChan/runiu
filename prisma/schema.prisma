@@ -11,8 +11,8 @@ datasource db {
 model Round {
   number               String    @id
   url                  String?
-  name                 String?
-  nameClean            String?   @map("name_clean")
+  type                 String?
+  typeClean            String?   @map("type_clean")
   issued               Int?
   lowestCRS            Int?      @map("lowest_crs")
   date                 DateTime? @db.Date
