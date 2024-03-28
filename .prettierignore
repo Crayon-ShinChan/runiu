@@ -5,3 +5,4 @@ public/
 .gitignore
 .husky/
 prisma/
+.env.example
