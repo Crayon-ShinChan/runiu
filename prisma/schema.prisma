@@ -8,35 +8,35 @@ datasource db {
   directUrl = env("DIRECT_URL")
 }
 
-model EERound {
-  number                  String    @id
-  url                     String?
-  name                    String?
-  name_clean              String?
-  issued                  Int?
-  lowest_crs              Int?
-  date                    DateTime? @db.Date
-  datetime                DateTime? @db.Timestamp(6)
-  cut_off_datetime        DateTime? @db.Timestamp(6)
-  distribution_as_on_date DateTime? @db.Date
-  dd1                     Int?
-  dd2                     Int?
-  dd3                     Int?
-  dd4                     Int?
-  dd5                     Int?
-  dd6                     Int?
-  dd7                     Int?
-  dd8                     Int?
-  dd9                     Int?
-  dd10                    Int?
-  dd11                    Int?
-  dd12                    Int?
-  dd13                    Int?
-  dd14                    Int?
-  dd15                    Int?
-  dd16                    Int?
-  dd17                    Int?
-  dd18                    Int?
+model Round {
+  number               String    @id
+  url                  String?
+  name                 String?
+  nameClean            String?   @map("name_clean")
+  issued               Int?
+  lowestCRS            Int?      @map("lowest_crs")
+  date                 DateTime? @db.Date
+  datetime             DateTime? @db.Timestamp(6)
+  cutOffDatetime       DateTime? @map("cut_off_datetime") @db.Timestamp(6)
+  distributionAsOnDate DateTime? @map("distribution_as_on_date") @db.Date
+  dd1                  Int?
+  dd2                  Int?
+  dd3                  Int?
+  dd4                  Int?
+  dd5                  Int?
+  dd6                  Int?
+  dd7                  Int?
+  dd8                  Int?
+  dd9                  Int?
+  dd10                 Int?
+  dd11                 Int?
+  dd12                 Int?
+  dd13                 Int?
+  dd14                 Int?
+  dd15                 Int?
+  dd16                 Int?
+  dd17                 Int?
+  dd18                 Int?
 
   @@map("ee_round")
 }

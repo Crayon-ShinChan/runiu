@@ -13,8 +13,8 @@
     "format:staged": "prettier --write $(git diff --staged --name-only --diff-filter d | xargs)",
     "postinstall": "prisma generate",
     "lint": "next lint",
-    "migrate:dev": "npx dotenv -c development -- prisma migrate dev",
-    "migrate:dev-readonly": "npx dotenv -c development -- prisma migrate dev --read-only",
+    "migrate:dev": "dotenv -c development -- prisma migrate dev",
+    "migrate:dev-create": "dotenv -c development -- prisma migrate dev --create-only",
     "prepare": "husky",
     "start": "next start"
   },

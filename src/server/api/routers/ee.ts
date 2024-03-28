@@ -11,6 +11,6 @@ export const EERouter = createTRPCRouter({
     }),
 
   getLatest: publicProcedure.query(({ ctx }) => {
-    return ctx.db.ee_round.findFirst();
+    return ctx.db.round.findFirst();
   }),
 });
