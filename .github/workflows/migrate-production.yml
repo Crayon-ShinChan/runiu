@@ -1,0 +1,38 @@
+name: Migrate Production Database
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  database_migration:
+    name: Migrate Database
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: latest
+
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v4
+        with:
+          cache: "pnpm"
+
+      - name: Install Dependencies with pnpm
+        run: pnpm i
+
+      - name: Run Build (Check)
+        run: npm run build
+        env:
+          SKIP_ENV_VALIDATION: true
+
+      - name: Apply Database Migrations
+        run: npx prisma migrate deploy
+        env:
+          DATABASE_URL: ${{ secrets.DIRECT_URL }}
+          DIRECT_URL: ${{ secrets.DIRECT_URL }}
