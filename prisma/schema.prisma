@@ -1,20 +1,42 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
-model Post {
-  id        Int      @id @default(autoincrement())
-  name      String
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+model EERound {
+  number                  String    @id
+  url                     String?
+  name                    String?
+  name_clean              String?
+  issued                  Int?
+  lowest_crs              Int?
+  date                    DateTime? @db.Date
+  datetime                DateTime? @db.Timestamp(6)
+  cut_off_datetime        DateTime? @db.Timestamp(6)
+  distribution_as_on_date DateTime? @db.Date
+  dd1                     Int?
+  dd2                     Int?
+  dd3                     Int?
+  dd4                     Int?
+  dd5                     Int?
+  dd6                     Int?
+  dd7                     Int?
+  dd8                     Int?
+  dd9                     Int?
+  dd10                    Int?
+  dd11                    Int?
+  dd12                    Int?
+  dd13                    Int?
+  dd14                    Int?
+  dd15                    Int?
+  dd16                    Int?
+  dd17                    Int?
+  dd18                    Int?
 
-  @@index([name])
+  @@map("ee_round")
 }

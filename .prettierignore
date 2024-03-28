@@ -4,3 +4,4 @@ coverage
 public/
 .gitignore
 .husky/
+prisma/
