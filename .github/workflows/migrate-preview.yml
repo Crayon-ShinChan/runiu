@@ -1,14 +1,14 @@
-name: Migrate Production Database
+name: Migrate Preview Database
 on:
   push:
-    branches:
+    branches-ignore:
       - main
 
 jobs:
   database_migration:
     name: Migrate Database
     runs-on: ubuntu-latest
-    environment: Production
+    environment: Preview
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
