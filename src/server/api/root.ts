@@ -1,4 +1,4 @@
-import { EERouter } from "@/server/api/routers/ee";
+import { RoundRouter } from "@/server/api/routers/round";
 import { createCallerFactory, createTRPCRouter } from "@/server/api/trpc";
 
 /**
@@ -7,7 +7,7 @@ import { createCallerFactory, createTRPCRouter } from "@/server/api/trpc";
  * All routers added in /api/routers should be manually added here.
  */
 export const appRouter = createTRPCRouter({
-  ee: EERouter,
+  round: RoundRouter,
 });
 
 // export type definition of API

@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
 import { TRPCReactProvider } from "@/trpc/react";
 
@@ -20,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`font-sans ${inter.variable}`}>
+      <body className={cn("min-h-[calc(100svh)] font-sans", inter.variable)}>
         <TRPCReactProvider>{children}</TRPCReactProvider>
       </body>
     </html>
