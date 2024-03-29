@@ -88,10 +88,10 @@ function Title() {
         The Minimum CRS Score Required for EE Draws
       </h2>
       <h3 className="text-sm text-zinc-500">
-        This interactive chart displays the CRS score of the lowest-ranked
-        candidate invited for the Canadian Express Entry system. You can choose
-        either the &quot;legend&quot; or &quot;date picker&quot; option to
-        filter the data.
+        This real-time interactive chart displays the CRS score of the
+        lowest-ranked candidate invited for the Canadian Express Entry system.
+        You can choose either the &quot;legend&quot; or &quot;date picker&quot;
+        option to filter the data.
       </h3>
     </div>
   );
