@@ -28,6 +28,35 @@ export default function CRSChart({ roundData }: { roundData: Round[] }) {
       maxRow: 4,
       defaultSelected: ["General"],
     },
+    tooltip: {
+      trigger: ["click" as const, "hover" as const],
+      mark: {
+        visible: true,
+        position: {
+          x: {
+            orient: "tr" as const,
+            mode: "pointer" as const,
+          },
+          y: {
+            orient: "tr" as const,
+            mode: "pointer" as const,
+          },
+        },
+      },
+      dimension: {
+        visible: true,
+        position: {
+          x: {
+            orient: "tr" as const,
+            mode: "pointer" as const,
+          },
+          y: {
+            orient: "tr" as const,
+            mode: "pointer" as const,
+          },
+        },
+      },
+    },
   };
 
   return (
