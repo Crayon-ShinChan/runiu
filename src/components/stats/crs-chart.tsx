@@ -1,5 +1,6 @@
 "use client";
 
+import { CalendarSearch } from "lucide-react";
 import { useState } from "react";
 import { DatePickerInput } from "@mantine/dates";
 import { type Round } from "@prisma/client";
@@ -34,13 +35,16 @@ export default function CRSChart({ roundData }: { roundData: Round[] }) {
       <div className="justify-between gap-x-10 px-5 pb-3 pt-6 md:flex">
         <Title />
         <DatePickerInput
+          clearable
           type="range"
           label="Pick dates range"
           placeholder="Pick dates range"
           valueFormat="MMM DD, YYYY"
           value={dateRange}
           onChange={setDateRange}
-          className="w-56 shrink-0 pt-3 md:pt-0"
+          maxDate={new Date()}
+          leftSection={<CalendarSearch size={16} />}
+          className="w-[17rem] shrink-0 pt-3 md:pt-0"
         />
       </div>
       <VChart spec={spec} />
