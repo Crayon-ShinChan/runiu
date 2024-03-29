@@ -1,16 +1,17 @@
+import { Button } from "@mantine/core";
+import Container from "@/components/ui/container";
 import { api } from "@/trpc/server";
-import TestChart from "./test-chart";
+import CRSChart from "../components/stats/crs-chart";
 
 export default async function Home() {
-  const latest = await api.round.getLatest();
+  const roundData = await api.round.getAll();
 
   return (
-    <main>
-      {latest?.type}
-      <TestChart />
-      {/* <TestChart />
-      <TestChart />
-      <TestChart /> */}
-    </main>
+    <Container>
+      <main>
+        <CRSChart roundData={roundData} />
+        <Button>Click me</Button>
+      </main>
+    </Container>
   );
 }

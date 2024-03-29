@@ -1,8 +1,9 @@
 import { Inter } from "next/font/google";
+import { ColorSchemeScript } from "@mantine/core";
 import Navbar from "@/components/navbar";
 import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
-import { TRPCReactProvider } from "@/trpc/react";
+import Providers from "./providers";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -23,11 +24,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <ColorSchemeScript />
+      </head>
       <body className={cn("min-h-screen font-sans", inter.variable)}>
-        <TRPCReactProvider>
+        <Providers>
           <Navbar />
           {children}
-        </TRPCReactProvider>
+        </Providers>
       </body>
     </html>
   );
