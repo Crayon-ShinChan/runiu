@@ -34,11 +34,11 @@ export default function CRSChart({ roundData }: { roundData: Round[] }) {
         visible: true,
         position: {
           x: {
-            orient: "tr" as const,
+            orient: "tl" as const,
             mode: "pointer" as const,
           },
           y: {
-            orient: "tr" as const,
+            orient: "tl" as const,
             mode: "pointer" as const,
           },
         },
@@ -47,11 +47,11 @@ export default function CRSChart({ roundData }: { roundData: Round[] }) {
         visible: true,
         position: {
           x: {
-            orient: "tr" as const,
+            orient: "tl" as const,
             mode: "pointer" as const,
           },
           y: {
-            orient: "tr" as const,
+            orient: "tl" as const,
             mode: "pointer" as const,
           },
         },
