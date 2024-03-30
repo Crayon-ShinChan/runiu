@@ -41,6 +41,9 @@ dependencies:
   "@visactor/react-vchart":
     specifier: ^1.10.3
     version: 1.10.3(react-dom@18.2.0)(react@18.2.0)
+  "@visactor/vchart":
+    specifier: ^1.10.3
+    version: 1.10.3
   clsx:
     specifier: ^2.1.0
     version: 2.1.0
@@ -50,6 +53,9 @@ dependencies:
   dayjs:
     specifier: ^1.11.10
     version: 1.11.10
+  jotai:
+    specifier: ^2.7.2
+    version: 2.7.2(@types/react@18.2.58)(react@18.2.0)
   lucide-react:
     specifier: ^0.363.0
     version: 0.363.0(react@18.2.0)
@@ -65,6 +71,9 @@ dependencies:
   server-only:
     specifier: ^0.0.1
     version: 0.0.1
+  sonner:
+    specifier: ^1.4.41
+    version: 1.4.41(react-dom@18.2.0)(react@18.2.0)
   superjson:
     specifier: ^2.2.1
     version: 2.2.1
@@ -4778,6 +4787,25 @@ packages:
     hasBin: true
     dev: true
 
+  /jotai@2.7.2(@types/react@18.2.58)(react@18.2.0):
+    resolution:
+      {
+        integrity: sha512-6Ft5kpNu8p93Ssf1Faoza3hYQZRIYp7rioK8MwTTFnbQKwUyZElwquPwl1h6U0uo9hC0jr+ghO3gcSjc6P35/Q==,
+      }
+    engines: { node: ">=12.20.0" }
+    peerDependencies:
+      "@types/react": ">=17.0.0"
+      react: ">=17.0.0"
+    peerDependenciesMeta:
+      "@types/react":
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      "@types/react": 18.2.58
+      react: 18.2.0
+    dev: false
+
   /js-tokens@4.0.0:
     resolution:
       {
@@ -6734,6 +6762,19 @@ packages:
       {
         integrity: sha512-YiuPbxpCj4hD9Qs06hGAz/OZhQ0eDuALN0lRWJez0eD/RevzKqGdUx1IOMUnXgpr+sXZLq3g8ERwbAH0bCb8vg==,
       }
+    dev: false
+
+  /sonner@1.4.41(react-dom@18.2.0)(react@18.2.0):
+    resolution:
+      {
+        integrity: sha512-uG511ggnnsw6gcn/X+YKkWPo5ep9il9wYi3QJxHsYe7yTZ4+cOd1wuodOUmOpFuXL+/RE3R04LczdNCDygTDgQ==,
+      }
+    peerDependencies:
+      react: ^18.0.0
+      react-dom: ^18.0.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /sort-object-keys@1.1.3:

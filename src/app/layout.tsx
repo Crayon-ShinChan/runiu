@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import { Toaster } from "sonner";
 import { ColorSchemeScript } from "@mantine/core";
 import Navbar from "@/components/navbar";
 import { cn } from "@/lib/utils";
@@ -29,6 +30,7 @@ export default function RootLayout({
       </head>
       <body className={cn("min-h-screen font-sans", inter.variable)}>
         <Providers>
+          <Toaster richColors />
           <Navbar />
           {children}
         </Providers>
