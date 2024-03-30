@@ -41,6 +41,9 @@ dependencies:
   "@visactor/react-vchart":
     specifier: ^1.10.3
     version: 1.10.3(react-dom@18.2.0)(react@18.2.0)
+  "@visactor/vchart":
+    specifier: ^1.10.3
+    version: 1.10.3
   clsx:
     specifier: ^2.1.0
     version: 2.1.0
