@@ -3,7 +3,10 @@
 import { useAtomValue } from "jotai";
 import { type Round } from "@prisma/client";
 import { VChart } from "@visactor/react-vchart";
-import { date2Str, filterByDate } from "@/lib/data/preprocess";
+import {
+  date2Str,
+  filterByDate,
+} from "@/components/stats/crs-chart/data/preprocess";
 import AxesFilter from "./filters/axes-filter";
 import DateFilter from "./filters/date-filter";
 import { axesAtom, dateRangeAtom } from "./utils/atoms";
