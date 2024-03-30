@@ -6,6 +6,7 @@ import { Checkbox } from "@mantine/core";
 import { capitalize } from "@/lib/utils";
 import { axesAtom } from "../utils/atoms";
 import { type Axes, axesOptions } from "../utils/type";
+import FilterTitle from "./header";
 
 export default function AxesFilter() {
   const [axes, setAxes] = useAtom(axesAtom);
@@ -20,12 +21,9 @@ export default function AxesFilter() {
   };
 
   return (
-    <div className="flex flex-col">
-      <Checkbox.Group
-        value={axes}
-        onChange={handleAxesChange}
-        label="Select data type"
-      >
+    <div>
+      <FilterTitle title="Pick Data Types" />
+      <Checkbox.Group value={axes} onChange={handleAxesChange}>
         <div className="my-2 flex gap-x-5">
           {axesOptions.map((axis) => (
             <Checkbox key={axis} value={axis} label={capitalize(axis)} />

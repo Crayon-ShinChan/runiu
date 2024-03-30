@@ -1,4 +1,4 @@
-import { ICommonChartSpec } from "@visactor/react-vchart";
+import type { ICommonChartSpec } from "@visactor/react-vchart";
 import type { Datum } from "@visactor/vchart/esm/typings";
 import Chart from "./chart";
 import type { Axes, ChartSpec } from "./type";
@@ -106,7 +106,7 @@ const scoreSpec: ChartSpec = {
     seriesId: ["line"],
     title: {
       visible: true,
-      text: "Lowest CRS score",
+      text: "Lowest CRS Score",
     },
     id: "axisLeft",
   },
@@ -156,7 +156,7 @@ const issuedSpec: ChartSpec = {
     },
     title: {
       visible: true,
-      text: "Invitations issued",
+      text: "Invitations Issued",
     },
     sync: { axisId: "axisLeft", tickAlign: true },
     label: {
