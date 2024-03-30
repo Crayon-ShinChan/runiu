@@ -22,7 +22,7 @@ export default function AxesFilter() {
 
   return (
     <div>
-      <FilterTitle title="Pick data types" />
+      <FilterTitle title="Pick Data Types" />
       <Checkbox.Group value={axes} onChange={handleAxesChange}>
         <div className="my-2 flex gap-x-5">
           {axesOptions.map((axis) => (
