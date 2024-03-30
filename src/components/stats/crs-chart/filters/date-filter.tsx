@@ -3,7 +3,7 @@
 import { useAtom } from "jotai";
 import { CalendarSearch } from "lucide-react";
 import { DatePickerInput } from "@mantine/dates";
-import { dateRangeAtom } from "@/lib/atoms";
+import { dateRangeAtom } from "../utils/atoms";
 
 export default function DateFilter() {
   const [dateRange, setDateRange] = useAtom(dateRangeAtom);
