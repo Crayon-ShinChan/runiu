@@ -48,7 +48,7 @@ function HelpfulLinks() {
             <Image src="/github-mark.svg" alt="github" height={16} width={16} />
           }
         >
-          <Link href="https://www.lptoronto.com/calc/" target="_blank">
+          <Link href="https://github.com/Crayon-ShinChan/runiu" target="_blank">
             Contact or contribute to Runiu
           </Link>
         </Button>
