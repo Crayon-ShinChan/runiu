@@ -12,10 +12,9 @@ Discover comprehensive, up-to-date statistics for Canadian Immigration Programs 
 
 1. Fork the repo, then clone the repo to your local
 2. Start docker
-3. Run `./start-database.sh`
-   1. This will create a postgres database in docker locally
+3. Run `./start-database.sh`. This will create a postgres database in docker locally
 4. Run `pnpm i`
-5. Migrate database and prepare data for the database, run `pnpm db:reset`
+5. Run `pnpm db:reset`. This will migrate database and prepare data for development
 6. run `pnpm dev`
 
 ### Database migrations
