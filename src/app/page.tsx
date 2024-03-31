@@ -13,7 +13,7 @@ export default async function Home() {
     <Container>
       <main>
         <CRSChart roundData={roundData} />
-        <div className="px-5">
+        <div className="px-5 pb-8">
           <HelpfulLinks />
         </div>
       </main>
@@ -24,8 +24,8 @@ export default async function Home() {
 function HelpfulLinks() {
   return (
     <>
-      <h2 className="mt-6 pb-2 font-semibold text-zinc-900">Helpful Links</h2>
-      <div className="flex gap-x-4">
+      <h2 className="mt-4 pb-3 font-semibold text-zinc-900">Helpful Links</h2>
+      <div className="flex flex-wrap gap-2">
         <Button
           leftSection={
             <Image src="/maple.svg" alt="maple" height={16} width={16} />
@@ -41,6 +41,15 @@ function HelpfulLinks() {
         <Button leftSection={<Calculator size={16} />}>
           <Link href="https://www.lptoronto.com/calc/" target="_blank">
             Calculate your CRS score
+          </Link>
+        </Button>
+        <Button
+          leftSection={
+            <Image src="/github-mark.svg" alt="github" height={16} width={16} />
+          }
+        >
+          <Link href="https://www.lptoronto.com/calc/" target="_blank">
+            Contact or contribute to Runiu
           </Link>
         </Button>
       </div>
