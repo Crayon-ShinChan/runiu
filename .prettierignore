@@ -6,3 +6,4 @@ public/
 .husky/
 prisma/
 .env.example
+**/*.sh
