@@ -1,16 +1,19 @@
 {
-  "name": "hackathon-t3-template",
+  "name": "runiu",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "next build",
     "db:push": "prisma db push",
+    "db:reset": "dotenv -c development -- prisma migrate reset",
+    "db:seed": "dotenv -c development -- prisma db seed",
     "db:studio": "prisma studio",
     "dev": "next dev",
     "format:all": "prettier --write .",
     "format:lint": "prettier --check .",
     "format:staged": "prettier --write $(git diff --staged --name-only --diff-filter d | xargs)",
+    "preinstall": "npx only-allow pnpm",
     "postinstall": "prisma generate",
     "lint": "next lint",
     "migrate:dev": "dotenv -c development -- prisma migrate dev",
@@ -33,6 +36,7 @@
     "@visactor/react-vchart": "^1.10.3",
     "@visactor/vchart": "^1.10.3",
     "clsx": "^2.1.0",
+    "csv-parse": "^5.5.5",
     "date-fns": "^3.6.0",
     "dayjs": "^1.11.10",
     "jotai": "^2.7.2",
@@ -71,10 +75,14 @@
     "prettier-plugin-tailwindcss": "^0.5.11",
     "prisma": "^5.10.2",
     "tailwindcss": "^3.4.1",
+    "tsx": "^4.7.1",
     "typescript": "^5.3.3"
   },
   "packageManager": "pnpm@8.14.0",
   "ct3aMetadata": {
     "initVersion": "7.27.0"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
   }
 }
