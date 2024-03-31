@@ -14,6 +14,7 @@ Discover comprehensive, up-to-date statistics for Canadian Immigration Programs 
 2. Start docker
 3. Copy `.env.example` to `.env`
 4. Run `./start-database.sh`. This will create a postgres database in docker locally
+   1. If the port 5432 is already in use, you can change the port in the `./start-database.sh` and `.env` file
 5. Run `pnpm i`
 6. Run `pnpm db:reset`. This will migrate database and prepare data for development
 7. run `pnpm dev`
