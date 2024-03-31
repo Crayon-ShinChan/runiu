@@ -11,3 +11,5 @@ export const defaultDateRangeAtom = atom<DefaultDateRange | null>(
 );
 
 export const axesAtom = atom<Axes[]>(["score"]);
+
+export const defaultLegendAtom = atom<string[]>(["General"]);

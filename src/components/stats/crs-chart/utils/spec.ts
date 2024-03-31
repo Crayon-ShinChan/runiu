@@ -3,7 +3,11 @@ import type { Datum } from "@visactor/vchart/esm/typings";
 import Chart from "./chart";
 import type { Axes, ChartSpec } from "./type";
 
-export const getSpec = (data: Datum[], axes: Axes[]) => {
+export const getSpec = (
+  data: Datum[],
+  axes: Axes[],
+  defaultLegend: string[],
+) => {
   const scoreChart = new Chart(scoreSpec);
   const issuedChart = new Chart(issuedSpec);
 
@@ -26,7 +30,7 @@ export const getSpec = (data: Datum[], axes: Axes[]) => {
     legends: {
       visible: true,
       maxRow: 4,
-      defaultSelected: ["General"],
+      defaultSelected: defaultLegend,
     },
     tooltip: {
       trigger: ["click" as const, "hover" as const],

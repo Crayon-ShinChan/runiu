@@ -1,6 +1,6 @@
 "use client";
 
-import { useAtomValue } from "jotai";
+import { useAtom, useAtomValue } from "jotai";
 import { type Round } from "@prisma/client";
 import { VChart } from "@visactor/react-vchart";
 import {
@@ -9,14 +9,22 @@ import {
 } from "@/components/stats/crs-chart/data/preprocess";
 import AxesFilter from "./filters/axes-filter";
 import DateFilter from "./filters/date-filter";
-import { axesAtom, dateRangeAtom } from "./utils/atoms";
+import { axesAtom, dateRangeAtom, defaultLegendAtom } from "./utils/atoms";
 import { getSpec } from "./utils/spec";
 
 export default function CRSChart({ roundData }: { roundData: Round[] }) {
+  const [defaultLegend, setDefaultLegend] = useAtom(defaultLegendAtom);
   const dateRange = useAtomValue(dateRangeAtom);
   const axes = useAtomValue(axesAtom);
   const processedData = date2Str(filterByDate(roundData, dateRange));
-  const spec = getSpec(processedData, axes);
+  const spec = getSpec(processedData, axes, defaultLegend);
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handleLegendItemClick = (e: any) => {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-assignment
+    const labels: string[] = e?.value;
+    setDefaultLegend(labels);
+  };
 
   return (
     <div>
@@ -25,7 +33,7 @@ export default function CRSChart({ roundData }: { roundData: Round[] }) {
         <DateFilter />
         <AxesFilter />
       </div>
-      <VChart spec={spec} />
+      <VChart spec={spec} onLegendItemClick={handleLegendItemClick} />
     </div>
   );
 }
