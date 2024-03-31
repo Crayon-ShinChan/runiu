@@ -7,3 +7,4 @@ public/
 prisma/
 .env.example
 **/*.sh
+docs/
