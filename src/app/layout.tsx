@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import { Toaster } from "sonner";
 import { ColorSchemeScript } from "@mantine/core";
+import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Navbar from "@/components/navbar";
 import { cn } from "@/lib/utils";
@@ -35,6 +36,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <SpeedInsights />
+          <Analytics />
         </Providers>
       </body>
     </html>
