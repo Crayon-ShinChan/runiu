@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import { Toaster } from "sonner";
 import { ColorSchemeScript } from "@mantine/core";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Navbar from "@/components/navbar";
 import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
@@ -33,6 +34,7 @@ export default function RootLayout({
           <Toaster richColors />
           <Navbar />
           {children}
+          <SpeedInsights />
         </Providers>
       </body>
     </html>
