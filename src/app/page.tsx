@@ -30,6 +30,7 @@ function HelpfulLinks() {
           leftSection={
             <Image src="/maple.svg" alt="maple" height={16} width={16} />
           }
+          variant="light"
         >
           <Link
             href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/works.html"
@@ -38,7 +39,7 @@ function HelpfulLinks() {
             How Express Entry works
           </Link>
         </Button>
-        <Button leftSection={<Calculator size={16} />}>
+        <Button leftSection={<Calculator size={16} />} variant="light">
           <Link href="https://www.lptoronto.com/calc/" target="_blank">
             Calculate your CRS score
           </Link>
@@ -47,6 +48,7 @@ function HelpfulLinks() {
           leftSection={
             <Image src="/github-mark.svg" alt="github" height={16} width={16} />
           }
+          variant="light"
         >
           <Link href="https://github.com/Crayon-ShinChan/runiu" target="_blank">
             Contact or contribute to Runiu
