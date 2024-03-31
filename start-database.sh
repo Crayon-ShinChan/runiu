@@ -9,7 +9,7 @@
 
 # On Linux and macOS you can run this script directly - `./start-database.sh`
 
-DB_CONTAINER_NAME="hackathon-t3-template-postgres"
+DB_CONTAINER_NAME="runiu-postgres"
 
 if ! [ -x "$(command -v docker)" ]; then
   echo "Docker is not installed. Please install docker and try again.\nDocker install guide: https://docs.docker.com/engine/install/"
@@ -39,6 +39,15 @@ if [ "$DB_PASSWORD" = "password" ]; then
   sed -i -e "s#:password@#:$DB_PASSWORD@#" .env
 fi
 
-docker run --name $DB_CONTAINER_NAME -e POSTGRES_PASSWORD=$DB_PASSWORD -e POSTGRES_DB=hackathon-t3-template -d -p 5432:5432 docker.io/postgres
+# Set the DIRECT_URL to the DATABASE_URL
+set -a
+source .env
+DIRECT_URL=$DATABASE_URL
+sed '/^DIRECT_URL=.*$/d' .env > .env.tmp
+mv .env.tmp .env
+echo "DIRECT_URL=$DIRECT_URL" >> .env
+
+# If the 5432 port is already in use, you can change it in the following, e.g. 5440:5432
+docker run --name $DB_CONTAINER_NAME -e POSTGRES_PASSWORD=$DB_PASSWORD -e POSTGRES_DB=runiu -d -p 5432:5432 docker.io/postgres
 
 echo "Database container was succesfuly created"

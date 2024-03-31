@@ -6,8 +6,11 @@ This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3
 
 1. Clone this repo to your local
 2. Start docker
-3. run `./start-database.sh`
-4. run `pnpm dev`
+3. Run `./start-database.sh`
+   1. This will create a postgres database in docker locally
+4. Run `pnpm i`
+5. Migrate database and prepare data for the database, run `pnpm db:reset`
+6. run `pnpm dev`
 
 ## What's next? How do I make an app with this?
 
