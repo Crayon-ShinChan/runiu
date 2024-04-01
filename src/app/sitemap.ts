@@ -1,7 +1,9 @@
+import { getBaseUrl } from "@/lib/utils";
+
 export default async function sitemap() {
   return [
     {
-      url: "https://runiu.vercel.app",
+      url: getBaseUrl(),
       lastModified: new Date(),
       priority: 1,
     },
