@@ -21,18 +21,20 @@ export default function CRSChart({ roundData }: { roundData: Round[] }) {
   return (
     <div>
       <Title />
-      <div className="flex flex-wrap justify-between gap-x-10 gap-y-3 px-5 pb-3">
+      <div className="flex flex-wrap justify-between gap-x-10 gap-y-3 pb-3">
         <DateFilter />
         <AxesFilter />
       </div>
-      <VChart spec={spec} />
+      <div className="-mx-5">
+        <VChart spec={spec} />
+      </div>
     </div>
   );
 }
 
 function Title() {
   return (
-    <div className="px-5 pb-3 pt-6">
+    <div className="pb-3 pt-6">
       <h2 className="pb-1 font-semibold text-zinc-900">
         The Minimum CRS Score Required for EE Draws
       </h2>

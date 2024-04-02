@@ -4,8 +4,8 @@ import Container from "./ui/container";
 
 export default function Navbar() {
   return (
-    <Container className="sticky top-0 z-20 border-b bg-white">
-      <nav className="flex items-center justify-between py-2">
+    <nav className="sticky top-0 z-20 border-b bg-white">
+      <Container className="flex items-center justify-between py-2">
         <Link className="flex items-center" href="/">
           <Image
             src="/runiu.webp"
@@ -22,7 +22,7 @@ export default function Navbar() {
         <Link href="https://github.com/Crayon-ShinChan/runiu" target="_blank">
           <Image src="/github-mark.svg" alt="GitHub" width={24} height={24} />
         </Link>
-      </nav>
-    </Container>
+      </Container>
+    </nav>
   );
 }

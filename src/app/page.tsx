@@ -8,11 +8,9 @@ export default async function Home() {
 
   return (
     <Container>
-      <main>
+      <main className="pb-8">
         <CRSChart roundData={roundData} />
-        <div className="px-5 pb-8">
-          <HelpfulLinks />
-        </div>
+        <HelpfulLinks />
       </main>
     </Container>
   );
