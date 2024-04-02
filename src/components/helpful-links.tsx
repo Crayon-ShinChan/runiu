@@ -22,7 +22,10 @@ export default function HelpfulLinks() {
           </Link>
         </Button>
         <Button leftSection={<Calculator size={16} />} variant="light">
-          <Link href="https://www.lptoronto.com/calc/" target="_blank">
+          <Link
+            href="https://ircc.canada.ca/english/immigrate/skilled/crs-tool.asp"
+            target="_blank"
+          >
             Calculate your CRS score
           </Link>
         </Button>
