@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-20 border-b bg-white">
       <Container className="flex items-center justify-between py-2">
-        <Link className="flex items-center" href="/">
+        <Link className="-ml-2 flex items-center" href="/">
           <Image
             src="/runiu.webp"
             alt="logo"
