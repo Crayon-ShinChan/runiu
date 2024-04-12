@@ -12,7 +12,7 @@ import FilterTitle from "./header";
 export default function DateFilter() {
   return (
     <div>
-      <FilterTitle title="Pick Dates Range" />
+      <FilterTitle title="Pick Date Range" />
       <div className="flex flex-wrap gap-1">
         <DateRangePicker />
         <DefaultDateRangeCombobox />
