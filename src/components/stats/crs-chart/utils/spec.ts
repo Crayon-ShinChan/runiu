@@ -109,6 +109,7 @@ const scoreSpec: ChartSpec = {
       text: "Lowest CRS Score",
     },
     id: "axisLeft",
+    zero: false,
   },
 };
 
