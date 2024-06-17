@@ -29,7 +29,7 @@ export const getSpec = (data: Datum[], axes: Axes[]) => {
       defaultSelected: ["General"],
     },
     tooltip: {
-      trigger: ["click" as const, "hover" as const],
+      trigger: ["click", "hover"],
       mark: {
         visible: true,
         position: {
@@ -56,6 +56,10 @@ export const getSpec = (data: Datum[], axes: Axes[]) => {
           },
         },
       },
+    },
+    crosshair: {
+      trigger: ["click", "hover"],
+      xField: { visible: true, line: { type: "rect" } },
     },
   };
 
