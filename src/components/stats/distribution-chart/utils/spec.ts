@@ -11,6 +11,7 @@ import type { DistributionData } from "./type";
 export const getSpec = (data: [DistributionData, ...DistributionData[]]) => {
   const spec: IHistogramChartSpec = {
     type: "histogram",
+    height: 400,
     data: data[0].data,
     xField: "start",
     x2Field: "end",
@@ -55,7 +56,6 @@ export const getSpec = (data: [DistributionData, ...DistributionData[]]) => {
         dataId: "date",
         style: {
           textBaseline: "bottom",
-          dy: 12,
           fontSize: 14,
           textAlign: "right",
           fontWeight: 600,
@@ -63,10 +63,7 @@ export const getSpec = (data: [DistributionData, ...DistributionData[]]) => {
           x: (datum, ctx) => {
             return (ctx.vchart as any).getChart().getCanvasRect()?.width - 50;
           },
-          y: (datum, ctx) => {
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            return (ctx.vchart as any).getChart().getCanvasRect()?.height - 50;
-          },
+          y: 50,
           fill: "grey",
           fillOpacity: 0.5,
         },
@@ -93,7 +90,6 @@ export const getSpec = (data: [DistributionData, ...DistributionData[]]) => {
     player: {
       type: "continuous",
       orient: "bottom",
-      dy: 10,
       auto: true,
       loop: true,
       position: "middle",

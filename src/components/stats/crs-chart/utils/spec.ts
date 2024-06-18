@@ -9,6 +9,7 @@ export const getSpec = (data: Datum[], axes: Axes[]) => {
 
   let spec: ICommonChartSpec = {
     type: "common",
+    height: 400,
     data: [
       {
         id: "round",
