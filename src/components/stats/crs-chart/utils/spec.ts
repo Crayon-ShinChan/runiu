@@ -59,7 +59,7 @@ export const getSpec = (data: Datum[], axes: Axes[]) => {
     },
     crosshair: {
       trigger: ["click", "hover"],
-      xField: { visible: true, line: { type: "rect" } },
+      xField: { visible: true, line: { type: "line" } },
     },
   };
 

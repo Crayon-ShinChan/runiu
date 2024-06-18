@@ -23,7 +23,20 @@ export const getSpec = (data: [DistributionData, ...DistributionData[]]) => {
     },
     tooltip: {
       visible: true,
+      trigger: ["click", "hover"],
       mark: {
+        title: {
+          key: "title",
+          value: "Number of People",
+        },
+        content: [
+          {
+            key: (datum) => datum!.start + "～" + datum!.end,
+            value: (datum) => datum!.value,
+          },
+        ],
+      },
+      dimension: {
         title: {
           key: "title",
           value: "Number of People",
