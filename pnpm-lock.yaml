@@ -9,10 +9,10 @@ importers:
     dependencies:
       "@mantine/core":
         specifier: ^7.7.0
-        version: 7.7.0(@mantine/hooks@7.7.0)(@types/react@18.2.58)(react-dom@18.2.0)(react@18.2.0)
+        version: 7.7.0(@mantine/hooks@7.7.0(react@18.2.0))(@types/react@18.2.58)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       "@mantine/dates":
         specifier: ^7.7.0
-        version: 7.7.0(@mantine/core@7.7.0)(@mantine/hooks@7.7.0)(dayjs@1.11.10)(react-dom@18.2.0)(react@18.2.0)
+        version: 7.7.0(@mantine/core@7.7.0(@mantine/hooks@7.7.0(react@18.2.0))(@types/react@18.2.58)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@mantine/hooks@7.7.0(react@18.2.0))(dayjs@1.11.10)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       "@mantine/hooks":
         specifier: ^7.7.0
         version: 7.7.0(react@18.2.0)
@@ -27,31 +27,31 @@ importers:
         version: 5.24.1(react@18.2.0)
       "@tanstack/react-query-devtools":
         specifier: ^5.24.1
-        version: 5.24.1(@tanstack/react-query@5.24.1)(react@18.2.0)
+        version: 5.24.1(@tanstack/react-query@5.24.1(react@18.2.0))(react@18.2.0)
       "@trpc/client":
         specifier: 11.0.0-next-beta.294
         version: 11.0.0-next-beta.294(@trpc/server@11.0.0-next-beta.294)
       "@trpc/next":
         specifier: 11.0.0-next-beta.294
-        version: 11.0.0-next-beta.294(@tanstack/react-query@5.24.1)(@trpc/client@11.0.0-next-beta.294)(@trpc/react-query@11.0.0-next-beta.294)(@trpc/server@11.0.0-next-beta.294)(next@14.1.0)(react-dom@18.2.0)(react@18.2.0)
+        version: 11.0.0-next-beta.294(@tanstack/react-query@5.24.1(react@18.2.0))(@trpc/client@11.0.0-next-beta.294(@trpc/server@11.0.0-next-beta.294))(@trpc/react-query@11.0.0-next-beta.294(@tanstack/react-query@5.24.1(react@18.2.0))(@trpc/client@11.0.0-next-beta.294(@trpc/server@11.0.0-next-beta.294))(@trpc/server@11.0.0-next-beta.294)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@trpc/server@11.0.0-next-beta.294)(next@14.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       "@trpc/react-query":
         specifier: 11.0.0-next-beta.294
-        version: 11.0.0-next-beta.294(@tanstack/react-query@5.24.1)(@trpc/client@11.0.0-next-beta.294)(@trpc/server@11.0.0-next-beta.294)(react-dom@18.2.0)(react@18.2.0)
+        version: 11.0.0-next-beta.294(@tanstack/react-query@5.24.1(react@18.2.0))(@trpc/client@11.0.0-next-beta.294(@trpc/server@11.0.0-next-beta.294))(@trpc/server@11.0.0-next-beta.294)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       "@trpc/server":
         specifier: 11.0.0-next-beta.294
         version: 11.0.0-next-beta.294
       "@vercel/analytics":
         specifier: ^1.2.2
-        version: 1.2.2(next@14.1.0)(react@18.2.0)
+        version: 1.2.2(next@14.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
       "@vercel/speed-insights":
         specifier: ^1.0.10
-        version: 1.0.10(next@14.1.0)(react@18.2.0)
+        version: 1.0.10(next@14.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
       "@visactor/react-vchart":
-        specifier: ^1.11.0
-        version: 1.11.0(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^1.11.3
+        version: 1.11.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       "@visactor/vchart":
-        specifier: ^1.11.0
-        version: 1.11.0
+        specifier: ^1.11.3
+        version: 1.11.4
       clsx:
         specifier: ^2.1.0
         version: 2.1.0
@@ -72,7 +72,7 @@ importers:
         version: 0.363.0(react@18.2.0)
       next:
         specifier: ^14.1.0
-        version: 14.1.0(react-dom@18.2.0)(react@18.2.0)
+        version: 14.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -84,7 +84,7 @@ importers:
         version: 0.0.1
       sonner:
         specifier: ^1.4.41
-        version: 1.4.41(react-dom@18.2.0)(react@18.2.0)
+        version: 1.4.41(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       superjson:
         specifier: ^2.2.1
         version: 2.2.1
@@ -118,7 +118,7 @@ importers:
         version: 18.2.19
       "@typescript-eslint/eslint-plugin":
         specifier: ^7.0.2
-        version: 7.0.2(@typescript-eslint/parser@7.0.2)(eslint@8.57.0)(typescript@5.3.3)
+        version: 7.0.2(@typescript-eslint/parser@7.0.2(eslint@8.57.0)(typescript@5.3.3))(eslint@8.57.0)(typescript@5.3.3)
       "@typescript-eslint/parser":
         specifier: ^7.0.2
         version: 7.0.2(eslint@8.57.0)(typescript@5.3.3)
@@ -160,7 +160,7 @@ importers:
         version: 5.0.0(prettier@3.2.5)
       prettier-plugin-tailwindcss:
         specifier: ^0.5.11
-        version: 0.5.11(@trivago/prettier-plugin-sort-imports@4.3.0)(prettier@3.2.5)
+        version: 0.5.11(@trivago/prettier-plugin-sort-imports@4.3.0(prettier@3.2.5))(prettier@3.2.5)
       prisma:
         specifier: ^5.10.2
         version: 5.10.2
@@ -1499,130 +1499,115 @@ packages:
       vue-router:
         optional: true
 
-  "@visactor/react-vchart@1.11.0":
+  "@visactor/react-vchart@1.11.4":
     resolution:
       {
-        integrity: sha512-6VzaYd7o4+9h64Ecm0nlD1iFe6BQtLUqKynZ9j2cQJvvfpcrT/05FclmpWsLXTmIa39bw31oAkhRbqt0j76WWQ==,
+        integrity: sha512-rrFD9yPp9K0EivEB48Y7j5EpuvoewWxdz7btRip0TsTMbVuQ7d89kgm9jPeE2P4XjPTRv4/LyvGZpcUqDHr2PA==,
       }
     peerDependencies:
       react: ">=16.0.0"
       react-dom: ">=16.0.0"
 
-  "@visactor/vchart@1.11.0":
+  "@visactor/vchart@1.11.4":
     resolution:
       {
-        integrity: sha512-omEwPwLzi9PioVmiP/9L8IJoJnqRs/LsGPEkFhQYCBdSSuyh+OApWXo/a7jL/t7PsRSZVIeogmXh6YUY72XuLw==,
+        integrity: sha512-PwqvMIwBAN3I5TvL91ug9vRbdI9chMKw/LzjXKTgXMq4PQt2XJ0VY+eovpCFgE/Tb6JQFBrwzxxnxhUzrX4ypg==,
       }
 
-  "@visactor/vdataset@0.18.6":
+  "@visactor/vdataset@0.18.9":
     resolution:
       {
-        integrity: sha512-48ioKGrGFVuvM2SOyZjSfZxy+l8ZGb64S5/kwIOcLjMkUeYk/WkhKZRhVeDa+TCcthRndHrPgvL6XOZOtg9gEA==,
+        integrity: sha512-qQBOGKbB4W1+0aUQ95y9q4Nu56VAiC01Pijhkje0EUHpO8EIy17tUc0xtjpHE4iO8ym/02c4cGv4FKtuiewIrA==,
       }
 
-  "@visactor/vgrammar-coordinate@0.13.2":
+  "@visactor/vgrammar-coordinate@0.13.10":
     resolution:
       {
-        integrity: sha512-mvIJa8V7zVnfOrKDc6v4XLXo5h0vJoPG/US4nakSX+EK4cODbiQg0TCOsJQDHntPRdXx20A5EGp3mRoIOHM6sw==,
+        integrity: sha512-DxVGoAXkSr/tSDSQcfY14kGdeX87wczpefBdkb/qiZESjzfDixnAL9nNaBppoV+wtzP6YxOBLZ7qNlmo8oyvtA==,
       }
 
-  "@visactor/vgrammar-core@0.13.2":
+  "@visactor/vgrammar-core@0.13.10":
     resolution:
       {
-        integrity: sha512-uBmGP4Cj1yEc+iR31dKCM4J0ISs5Qy9cbtouCJfuMx2lGzlJQR7ThVS5sFKlPbLtRDp8YPz+TmNcACHGXWZLUg==,
+        integrity: sha512-sJajDZ51tB61ho/YI0WxeUx10pZ3GyVBCxzPIKGZaQWuopnt/gpPwy/Y0bSqbI5V/qXAcCbDKJuvNWMJsEFgEQ==,
       }
 
-  "@visactor/vgrammar-hierarchy@0.13.2":
+  "@visactor/vgrammar-hierarchy@0.13.10":
     resolution:
       {
-        integrity: sha512-31pDnI4/+DPHme1isFNTvAoU8BAJCdmNM734hQ0gBgq7wyjKyybkxdIFNm7oh2ow+Q3wpVSUHNoyAR7l/uJGPg==,
+        integrity: sha512-JoGjcW1FsdUVpYJXZng3Up00Ipirffne2hp08HD4yjVSzi5jwMTJ2qazkQaIkG8vdeOErCqyLiKdfnnHfBMybg==,
       }
 
-  "@visactor/vgrammar-projection@0.13.2":
+  "@visactor/vgrammar-projection@0.13.10":
     resolution:
       {
-        integrity: sha512-+3xObQkYSWYZPuWiml82Gp3mSuUa7/QRoKmicv9sEFjC++HmTllD729/CofPXEodYhK5Ju4q5TO0qRhV5/DOOA==,
+        integrity: sha512-RTxfI9u2pdZOjYiDTQa9b9bPQgEMOn0r0Yp2Am4HhYzCpPiE0NrXNFPz1Ot1vnFIsGLaLRn+DwQVryVSVC7myw==,
       }
 
-  "@visactor/vgrammar-sankey@0.13.2":
+  "@visactor/vgrammar-sankey@0.13.10":
     resolution:
       {
-        integrity: sha512-jjX6BGLTbTivAVRjS5KIMK7GLJ2QlosYzzUXl6/4xP8fmiUJgoLLQpDUIucKTE3QcA1tUDWn6tXrzgTB4fyD5A==,
+        integrity: sha512-G0zS998eHMoO5VCLu0pd/Mi6JKaLKNafsRU8O2uGVgk2WweyaG5SRDgvZv5/YlaMSBwrtG/2iOYIvpEWOKvd5g==,
       }
 
-  "@visactor/vgrammar-util@0.13.2":
+  "@visactor/vgrammar-util@0.13.10":
     resolution:
       {
-        integrity: sha512-UIGLsoFP0q9NcLSfDiSGLIZ6QzB5kOyP8AHqqktZs08bPgqisbobyVtl6zuGVuwsQZBKf1i50knLX1Lnb+sOcw==,
+        integrity: sha512-N+HLotFXlCAnYkrHQ7YDkVatTCirlOGCL/26+2VZtB69aiIV9qTQm/Cor7LOTAR7Xb7uF8QgyndDwHe3+ojw9Q==,
       }
 
-  "@visactor/vgrammar-venn@0.13.2":
+  "@visactor/vgrammar-venn@0.13.10":
     resolution:
       {
-        integrity: sha512-ppMHjZeOiMbmNTiyeWYqVkZdEUn/ny1v6pPGUh1f3/JKUYy80fM6PG6yKcwbEPg5Rc68Hjz5T9IFO4f0mWloNQ==,
+        integrity: sha512-dClkh269VSy5wVR4sC2l2ZoUo2lbQj0RvhJrZp8WoGK4wXHuoGlMlxb+qQc4TRw/lD8G6YJltcg8rtRPZ8+dog==,
       }
 
-  "@visactor/vgrammar-wordcloud-shape@0.13.2":
+  "@visactor/vgrammar-wordcloud-shape@0.13.10":
     resolution:
       {
-        integrity: sha512-RxpakDTusIYSy3G2SNmB1nYtXKBs4nYcONc/Njrfk21/+P73pVoZ/DXGI8SB4YxSjp1MPRf9bpPWOWNTw5u8og==,
+        integrity: sha512-AYLrgiYDf6OIn3jNZwzO5CPIhCaECr2SO++hrlQJMCy/3ZuER1cSj8VIIwH3/CDzIE+h086ENSXrou1jIBLxFw==,
       }
 
-  "@visactor/vgrammar-wordcloud@0.13.2":
+  "@visactor/vgrammar-wordcloud@0.13.10":
     resolution:
       {
-        integrity: sha512-VSho3WsH1AQt95qZytrlZDyEUNVXnuO+4hPAyXWVtT2DrGFkF6MHXqx/pPQRfHW3AkrQByCuK4KAirMPNPi8Kw==,
+        integrity: sha512-AojmYCqtNnSzkIl21WWCIa8ZQT5sI6i9tFbcbjzostJ7xSqN9c5eKkbnQoybKHRzq7dcQ3oEu0pu2/XJtpoNiA==,
       }
 
-  "@visactor/vrender-components@0.19.0":
+  "@visactor/vrender-components@0.19.11":
     resolution:
       {
-        integrity: sha512-J+Dtw727xVKg+7tTAbFkaM6AzNVdx0ZEXaGH4JYbhGTC6S6gO7rn8X+vGO2l/vilt4MfEWYAhRuGwZkJToiAxA==,
+        integrity: sha512-K9967q364GojufVIlEVxr9duE/ce7tHsBTHxWHjx+uGAiJy3gmG3Vx2Ch38yoDZorR47X+YFjBSJoIqNVOwi8Q==,
       }
 
-  "@visactor/vrender-core@0.19.0":
+  "@visactor/vrender-core@0.19.11":
     resolution:
       {
-        integrity: sha512-LOMg4bySvVXrCcyd8dqsQRvrPcdozOi1trIddslJuiES7bzldniTH0yWaqdysdhIK9dPCryDjOtU0i9nc0bz2w==,
+        integrity: sha512-an0zfDMJy9ygsXY1w2xSN2nWbUmy97YrBNDEvm0Nb/kS6tNpeB8G6z5t8KO2ivq5aVZihCIJv8342/yGOnDHfg==,
       }
 
-  "@visactor/vrender-kits@0.19.0":
+  "@visactor/vrender-kits@0.19.11":
     resolution:
       {
-        integrity: sha512-aTB2CYYpNHWusVTO3bjH/wMYkhaKvO+sD6TA9A0tB5T4+jh0cfxKT+K3UE3sYDXhCjcuQNr9ZLbyz51IdxE4Gg==,
+        integrity: sha512-ZzVZKVrRCuxC8+awhG3yxTwE8/qZpSTNCettTsTNs12oifeN6m+z2mvCSdHcOUn5Hw/FJyTFm2Bv2HmFNerQhw==,
       }
 
-  "@visactor/vscale@0.17.5":
+  "@visactor/vscale@0.18.9":
     resolution:
       {
-        integrity: sha512-2dkS1IlAJ/IdTp8JElbctOOv6lkHKBKPDm8KvwBo0NuGWQeYAebSeyN3QCdwKbj76gMlCub4zc+xWrS5YiA2zA==,
+        integrity: sha512-rglOQQGhkamtjGtbFxY5pcfqsBXDyYU6NiQuBdVSeYRQvB9YpLLk455HpvQcEEhC+bRopNQsQgQV5276Pd0sfQ==,
       }
 
-  "@visactor/vscale@0.18.6":
+  "@visactor/vutils-extension@1.11.4":
     resolution:
       {
-        integrity: sha512-v4zPi1Ngo9WOf7YdseISyVMtKwAc4FqqQ5VkHDXYGeGJH3JrMOjCvbi9mD7Sw2LfMQ9CTqqGhoQ9M/+BXQ8t/A==,
+        integrity: sha512-7803joLO5XYpbUyJZDU3dAygLtpjvCcj1k4+RY6Co3+xH+aJ85qfqU8iKuKCKzjo0j0ls8MUNGJUTVW2nySwTw==,
       }
 
-  "@visactor/vutils-extension@1.11.0":
+  "@visactor/vutils@0.18.9":
     resolution:
       {
-        integrity: sha512-fRxv1VkoDgDVaTCeBoc9u6d343vd/lZGR8N2f/c6Hn8woToJB1lHrGg1MBEgxNKOaeLZN3dc5EcMn9LhxOpM4g==,
-      }
-    peerDependencies:
-      "@visactor/vrender-components": ">=0.18"
-      "@visactor/vrender-core": ">=0.18"
-
-  "@visactor/vutils@0.17.5":
-    resolution:
-      {
-        integrity: sha512-HFN6Pk1Wc1RK842g02MeKOlvdri5L7/nqxMVTqxIvi0XMhHXpmoqN4+/9H+h8LmJpVohyrI/MT85TRBV/rManw==,
-      }
-
-  "@visactor/vutils@0.18.6":
-    resolution:
-      {
-        integrity: sha512-/Bw+yfP0yrrI/iTesv2XroDte3BYfTFhNJx7BVj1/z6S9TwOcry76xjW8Xjet5+hESUGas0H2J1WZR+5WliSXA==,
+        integrity: sha512-+CPwBATTQUPtXQ0KVXFRz8SCwAY9m5aR9QmtsVqya+mgaay3moFaAPNTbdkLBuZM5ewRYVcv/3fsDxuH+NXfFg==,
       }
 
   JSONStream@1.3.5:
@@ -5714,7 +5699,7 @@ snapshots:
       "@commitlint/types": 18.6.1
       chalk: 4.1.2
       cosmiconfig: 8.3.6(typescript@5.3.3)
-      cosmiconfig-typescript-loader: 5.0.0(@types/node@20.11.20)(cosmiconfig@8.3.6)(typescript@5.3.3)
+      cosmiconfig-typescript-loader: 5.0.0(@types/node@20.11.20)(cosmiconfig@8.3.6(typescript@5.3.3))(typescript@5.3.3)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -5866,15 +5851,15 @@ snapshots:
       "@floating-ui/core": 1.6.0
       "@floating-ui/utils": 0.2.1
 
-  "@floating-ui/react-dom@2.0.8(react-dom@18.2.0)(react@18.2.0)":
+  "@floating-ui/react-dom@2.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0)":
     dependencies:
       "@floating-ui/dom": 1.6.3
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
-  "@floating-ui/react@0.26.10(react-dom@18.2.0)(react@18.2.0)":
+  "@floating-ui/react@0.26.10(react-dom@18.2.0(react@18.2.0))(react@18.2.0)":
     dependencies:
-      "@floating-ui/react-dom": 2.0.8(react-dom@18.2.0)(react@18.2.0)
+      "@floating-ui/react-dom": 2.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       "@floating-ui/utils": 0.2.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -5920,23 +5905,23 @@ snapshots:
       "@jridgewell/resolve-uri": 3.1.2
       "@jridgewell/sourcemap-codec": 1.4.15
 
-  "@mantine/core@7.7.0(@mantine/hooks@7.7.0)(@types/react@18.2.58)(react-dom@18.2.0)(react@18.2.0)":
+  "@mantine/core@7.7.0(@mantine/hooks@7.7.0(react@18.2.0))(@types/react@18.2.58)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)":
     dependencies:
-      "@floating-ui/react": 0.26.10(react-dom@18.2.0)(react@18.2.0)
+      "@floating-ui/react": 0.26.10(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       "@mantine/hooks": 7.7.0(react@18.2.0)
       clsx: 2.1.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      react-number-format: 5.3.4(react-dom@18.2.0)(react@18.2.0)
+      react-number-format: 5.3.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react-remove-scroll: 2.5.9(@types/react@18.2.58)(react@18.2.0)
       react-textarea-autosize: 8.5.3(@types/react@18.2.58)(react@18.2.0)
       type-fest: 4.14.0
     transitivePeerDependencies:
       - "@types/react"
 
-  "@mantine/dates@7.7.0(@mantine/core@7.7.0)(@mantine/hooks@7.7.0)(dayjs@1.11.10)(react-dom@18.2.0)(react@18.2.0)":
+  "@mantine/dates@7.7.0(@mantine/core@7.7.0(@mantine/hooks@7.7.0(react@18.2.0))(@types/react@18.2.58)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@mantine/hooks@7.7.0(react@18.2.0))(dayjs@1.11.10)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)":
     dependencies:
-      "@mantine/core": 7.7.0(@mantine/hooks@7.7.0)(@types/react@18.2.58)(react-dom@18.2.0)(react@18.2.0)
+      "@mantine/core": 7.7.0(@mantine/hooks@7.7.0(react@18.2.0))(@types/react@18.2.58)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       "@mantine/hooks": 7.7.0(react@18.2.0)
       clsx: 2.1.0
       dayjs: 1.11.10
@@ -5998,7 +5983,7 @@ snapshots:
   "@pkgr/core@0.1.1": {}
 
   "@prisma/client@5.10.2(prisma@5.10.2)":
-    dependencies:
+    optionalDependencies:
       prisma: 5.10.2
 
   "@prisma/debug@5.10.2": {}
@@ -6085,20 +6070,22 @@ snapshots:
 
   "@t3-oss/env-core@0.9.2(typescript@5.3.3)(zod@3.22.4)":
     dependencies:
-      typescript: 5.3.3
       zod: 3.22.4
+    optionalDependencies:
+      typescript: 5.3.3
 
   "@t3-oss/env-nextjs@0.9.2(typescript@5.3.3)(zod@3.22.4)":
     dependencies:
       "@t3-oss/env-core": 0.9.2(typescript@5.3.3)(zod@3.22.4)
-      typescript: 5.3.3
       zod: 3.22.4
+    optionalDependencies:
+      typescript: 5.3.3
 
   "@tanstack/query-core@5.24.1": {}
 
   "@tanstack/query-devtools@5.24.0": {}
 
-  "@tanstack/react-query-devtools@5.24.1(@tanstack/react-query@5.24.1)(react@18.2.0)":
+  "@tanstack/react-query-devtools@5.24.1(@tanstack/react-query@5.24.1(react@18.2.0))(react@18.2.0)":
     dependencies:
       "@tanstack/query-devtools": 5.24.0
       "@tanstack/react-query": 5.24.1(react@18.2.0)
@@ -6125,17 +6112,18 @@ snapshots:
     dependencies:
       "@trpc/server": 11.0.0-next-beta.294
 
-  "@trpc/next@11.0.0-next-beta.294(@tanstack/react-query@5.24.1)(@trpc/client@11.0.0-next-beta.294)(@trpc/react-query@11.0.0-next-beta.294)(@trpc/server@11.0.0-next-beta.294)(next@14.1.0)(react-dom@18.2.0)(react@18.2.0)":
+  "@trpc/next@11.0.0-next-beta.294(@tanstack/react-query@5.24.1(react@18.2.0))(@trpc/client@11.0.0-next-beta.294(@trpc/server@11.0.0-next-beta.294))(@trpc/react-query@11.0.0-next-beta.294(@tanstack/react-query@5.24.1(react@18.2.0))(@trpc/client@11.0.0-next-beta.294(@trpc/server@11.0.0-next-beta.294))(@trpc/server@11.0.0-next-beta.294)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@trpc/server@11.0.0-next-beta.294)(next@14.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)":
     dependencies:
-      "@tanstack/react-query": 5.24.1(react@18.2.0)
       "@trpc/client": 11.0.0-next-beta.294(@trpc/server@11.0.0-next-beta.294)
-      "@trpc/react-query": 11.0.0-next-beta.294(@tanstack/react-query@5.24.1)(@trpc/client@11.0.0-next-beta.294)(@trpc/server@11.0.0-next-beta.294)(react-dom@18.2.0)(react@18.2.0)
       "@trpc/server": 11.0.0-next-beta.294
-      next: 14.1.0(react-dom@18.2.0)(react@18.2.0)
+      next: 14.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
+    optionalDependencies:
+      "@tanstack/react-query": 5.24.1(react@18.2.0)
+      "@trpc/react-query": 11.0.0-next-beta.294(@tanstack/react-query@5.24.1(react@18.2.0))(@trpc/client@11.0.0-next-beta.294(@trpc/server@11.0.0-next-beta.294))(@trpc/server@11.0.0-next-beta.294)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
 
-  "@trpc/react-query@11.0.0-next-beta.294(@tanstack/react-query@5.24.1)(@trpc/client@11.0.0-next-beta.294)(@trpc/server@11.0.0-next-beta.294)(react-dom@18.2.0)(react@18.2.0)":
+  "@trpc/react-query@11.0.0-next-beta.294(@tanstack/react-query@5.24.1(react@18.2.0))(@trpc/client@11.0.0-next-beta.294(@trpc/server@11.0.0-next-beta.294))(@trpc/server@11.0.0-next-beta.294)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)":
     dependencies:
       "@tanstack/react-query": 5.24.1(react@18.2.0)
       "@trpc/client": 11.0.0-next-beta.294(@trpc/server@11.0.0-next-beta.294)
@@ -6214,7 +6202,7 @@ snapshots:
 
   "@types/semver@7.5.8": {}
 
-  "@typescript-eslint/eslint-plugin@7.0.2(@typescript-eslint/parser@7.0.2)(eslint@8.57.0)(typescript@5.3.3)":
+  "@typescript-eslint/eslint-plugin@7.0.2(@typescript-eslint/parser@7.0.2(eslint@8.57.0)(typescript@5.3.3))(eslint@8.57.0)(typescript@5.3.3)":
     dependencies:
       "@eslint-community/regexpp": 4.10.0
       "@typescript-eslint/parser": 7.0.2(eslint@8.57.0)(typescript@5.3.3)
@@ -6229,6 +6217,7 @@ snapshots:
       natural-compare: 1.4.0
       semver: 7.6.0
       ts-api-utils: 1.2.1(typescript@5.3.3)
+    optionalDependencies:
       typescript: 5.3.3
     transitivePeerDependencies:
       - supports-color
@@ -6241,6 +6230,7 @@ snapshots:
       "@typescript-eslint/visitor-keys": 6.21.0
       debug: 4.3.4
       eslint: 8.57.0
+    optionalDependencies:
       typescript: 5.3.3
     transitivePeerDependencies:
       - supports-color
@@ -6253,6 +6243,7 @@ snapshots:
       "@typescript-eslint/visitor-keys": 7.0.2
       debug: 4.3.4
       eslint: 8.57.0
+    optionalDependencies:
       typescript: 5.3.3
     transitivePeerDependencies:
       - supports-color
@@ -6274,6 +6265,7 @@ snapshots:
       debug: 4.3.4
       eslint: 8.57.0
       ts-api-utils: 1.2.1(typescript@5.3.3)
+    optionalDependencies:
       typescript: 5.3.3
     transitivePeerDependencies:
       - supports-color
@@ -6292,6 +6284,7 @@ snapshots:
       minimatch: 9.0.3
       semver: 7.6.0
       ts-api-utils: 1.2.1(typescript@5.3.3)
+    optionalDependencies:
       typescript: 5.3.3
     transitivePeerDependencies:
       - supports-color
@@ -6306,6 +6299,7 @@ snapshots:
       minimatch: 9.0.3
       semver: 7.6.0
       ts-api-utils: 1.2.1(typescript@5.3.3)
+    optionalDependencies:
       typescript: 5.3.3
     transitivePeerDependencies:
       - supports-color
@@ -6336,52 +6330,53 @@ snapshots:
 
   "@ungap/structured-clone@1.2.0": {}
 
-  "@vercel/analytics@1.2.2(next@14.1.0)(react@18.2.0)":
+  "@vercel/analytics@1.2.2(next@14.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)":
     dependencies:
-      next: 14.1.0(react-dom@18.2.0)(react@18.2.0)
-      react: 18.2.0
       server-only: 0.0.1
-
-  "@vercel/speed-insights@1.0.10(next@14.1.0)(react@18.2.0)":
-    dependencies:
-      next: 14.1.0(react-dom@18.2.0)(react@18.2.0)
+    optionalDependencies:
+      next: 14.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react: 18.2.0
 
-  "@visactor/react-vchart@1.11.0(react-dom@18.2.0)(react@18.2.0)":
+  "@vercel/speed-insights@1.0.10(next@14.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)":
+    optionalDependencies:
+      next: 14.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react: 18.2.0
+
+  "@visactor/react-vchart@1.11.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)":
     dependencies:
-      "@visactor/vchart": 1.11.0
-      "@visactor/vgrammar-core": 0.13.2
-      "@visactor/vrender-core": 0.19.0
-      "@visactor/vrender-kits": 0.19.0
-      "@visactor/vutils": 0.18.6
+      "@visactor/vchart": 1.11.4
+      "@visactor/vgrammar-core": 0.13.10
+      "@visactor/vrender-core": 0.19.11
+      "@visactor/vrender-kits": 0.19.11
+      "@visactor/vutils": 0.18.9
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       react-is: 18.2.0
 
-  "@visactor/vchart@1.11.0":
+  "@visactor/vchart@1.11.4":
     dependencies:
-      "@visactor/vdataset": 0.18.6
-      "@visactor/vgrammar-core": 0.13.2
-      "@visactor/vgrammar-hierarchy": 0.13.2
-      "@visactor/vgrammar-projection": 0.13.2
-      "@visactor/vgrammar-sankey": 0.13.2
-      "@visactor/vgrammar-util": 0.13.2
-      "@visactor/vgrammar-venn": 0.13.2
-      "@visactor/vgrammar-wordcloud": 0.13.2
-      "@visactor/vgrammar-wordcloud-shape": 0.13.2
-      "@visactor/vrender-components": 0.19.0
-      "@visactor/vrender-core": 0.19.0
-      "@visactor/vrender-kits": 0.19.0
-      "@visactor/vscale": 0.18.6
-      "@visactor/vutils": 0.18.6
-      "@visactor/vutils-extension": 1.11.0(@visactor/vrender-components@0.19.0)(@visactor/vrender-core@0.19.0)
+      "@visactor/vdataset": 0.18.9
+      "@visactor/vgrammar-core": 0.13.10
+      "@visactor/vgrammar-hierarchy": 0.13.10
+      "@visactor/vgrammar-projection": 0.13.10
+      "@visactor/vgrammar-sankey": 0.13.10
+      "@visactor/vgrammar-util": 0.13.10
+      "@visactor/vgrammar-venn": 0.13.10
+      "@visactor/vgrammar-wordcloud": 0.13.10
+      "@visactor/vgrammar-wordcloud-shape": 0.13.10
+      "@visactor/vrender-components": 0.19.11
+      "@visactor/vrender-core": 0.19.11
+      "@visactor/vrender-kits": 0.19.11
+      "@visactor/vscale": 0.18.9
+      "@visactor/vutils": 0.18.9
+      "@visactor/vutils-extension": 1.11.4
 
-  "@visactor/vdataset@0.18.6":
+  "@visactor/vdataset@0.18.9":
     dependencies:
       "@turf/flatten": 6.5.0
       "@turf/helpers": 6.5.0
       "@turf/rewind": 6.5.0
-      "@visactor/vutils": 0.18.6
+      "@visactor/vutils": 0.18.9
       d3-dsv: 2.0.0
       d3-geo: 1.12.1
       d3-hexbin: 0.2.2
@@ -6396,116 +6391,103 @@ snapshots:
       simplify-geojson: 1.0.5
       topojson-client: 3.1.0
 
-  "@visactor/vgrammar-coordinate@0.13.2":
+  "@visactor/vgrammar-coordinate@0.13.10":
     dependencies:
-      "@visactor/vgrammar-util": 0.13.2
-      "@visactor/vutils": 0.18.6
+      "@visactor/vgrammar-util": 0.13.10
+      "@visactor/vutils": 0.18.9
 
-  "@visactor/vgrammar-core@0.13.2":
+  "@visactor/vgrammar-core@0.13.10":
     dependencies:
-      "@visactor/vdataset": 0.18.6
-      "@visactor/vgrammar-coordinate": 0.13.2
-      "@visactor/vgrammar-util": 0.13.2
-      "@visactor/vrender-components": 0.19.0
-      "@visactor/vrender-core": 0.19.0
-      "@visactor/vrender-kits": 0.19.0
-      "@visactor/vscale": 0.18.6
-      "@visactor/vutils": 0.18.6
+      "@visactor/vdataset": 0.18.9
+      "@visactor/vgrammar-coordinate": 0.13.10
+      "@visactor/vgrammar-util": 0.13.10
+      "@visactor/vrender-components": 0.19.11
+      "@visactor/vrender-core": 0.19.11
+      "@visactor/vrender-kits": 0.19.11
+      "@visactor/vscale": 0.18.9
+      "@visactor/vutils": 0.18.9
 
-  "@visactor/vgrammar-hierarchy@0.13.2":
+  "@visactor/vgrammar-hierarchy@0.13.10":
     dependencies:
-      "@visactor/vgrammar-core": 0.13.2
-      "@visactor/vgrammar-util": 0.13.2
-      "@visactor/vrender-core": 0.19.0
-      "@visactor/vrender-kits": 0.19.0
-      "@visactor/vutils": 0.18.6
+      "@visactor/vgrammar-core": 0.13.10
+      "@visactor/vgrammar-util": 0.13.10
+      "@visactor/vrender-core": 0.19.11
+      "@visactor/vrender-kits": 0.19.11
+      "@visactor/vutils": 0.18.9
 
-  "@visactor/vgrammar-projection@0.13.2":
+  "@visactor/vgrammar-projection@0.13.10":
     dependencies:
-      "@visactor/vgrammar-core": 0.13.2
-      "@visactor/vgrammar-util": 0.13.2
-      "@visactor/vutils": 0.18.6
+      "@visactor/vgrammar-core": 0.13.10
+      "@visactor/vgrammar-util": 0.13.10
+      "@visactor/vutils": 0.18.9
       d3-geo: 1.12.1
 
-  "@visactor/vgrammar-sankey@0.13.2":
+  "@visactor/vgrammar-sankey@0.13.10":
     dependencies:
-      "@visactor/vgrammar-core": 0.13.2
-      "@visactor/vgrammar-util": 0.13.2
-      "@visactor/vrender-core": 0.19.0
-      "@visactor/vrender-kits": 0.19.0
-      "@visactor/vutils": 0.18.6
+      "@visactor/vgrammar-core": 0.13.10
+      "@visactor/vgrammar-util": 0.13.10
+      "@visactor/vrender-core": 0.19.11
+      "@visactor/vrender-kits": 0.19.11
+      "@visactor/vutils": 0.18.9
 
-  "@visactor/vgrammar-util@0.13.2":
+  "@visactor/vgrammar-util@0.13.10":
     dependencies:
-      "@visactor/vutils": 0.18.6
+      "@visactor/vutils": 0.18.9
 
-  "@visactor/vgrammar-venn@0.13.2":
+  "@visactor/vgrammar-venn@0.13.10":
     dependencies:
-      "@visactor/vgrammar-core": 0.13.2
-      "@visactor/vgrammar-util": 0.13.2
-      "@visactor/vrender-core": 0.19.0
-      "@visactor/vrender-kits": 0.19.0
-      "@visactor/vutils": 0.18.6
+      "@visactor/vgrammar-core": 0.13.10
+      "@visactor/vgrammar-util": 0.13.10
+      "@visactor/vrender-core": 0.19.11
+      "@visactor/vrender-kits": 0.19.11
+      "@visactor/vutils": 0.18.9
 
-  "@visactor/vgrammar-wordcloud-shape@0.13.2":
+  "@visactor/vgrammar-wordcloud-shape@0.13.10":
     dependencies:
-      "@visactor/vgrammar-core": 0.13.2
-      "@visactor/vgrammar-util": 0.13.2
-      "@visactor/vrender-core": 0.19.0
-      "@visactor/vrender-kits": 0.19.0
-      "@visactor/vscale": 0.18.6
-      "@visactor/vutils": 0.18.6
+      "@visactor/vgrammar-core": 0.13.10
+      "@visactor/vgrammar-util": 0.13.10
+      "@visactor/vrender-core": 0.19.11
+      "@visactor/vrender-kits": 0.19.11
+      "@visactor/vscale": 0.18.9
+      "@visactor/vutils": 0.18.9
 
-  "@visactor/vgrammar-wordcloud@0.13.2":
+  "@visactor/vgrammar-wordcloud@0.13.10":
     dependencies:
-      "@visactor/vgrammar-core": 0.13.2
-      "@visactor/vgrammar-util": 0.13.2
-      "@visactor/vrender-core": 0.19.0
-      "@visactor/vrender-kits": 0.19.0
-      "@visactor/vutils": 0.18.6
+      "@visactor/vgrammar-core": 0.13.10
+      "@visactor/vgrammar-util": 0.13.10
+      "@visactor/vrender-core": 0.19.11
+      "@visactor/vrender-kits": 0.19.11
+      "@visactor/vutils": 0.18.9
 
-  "@visactor/vrender-components@0.19.0":
+  "@visactor/vrender-components@0.19.11":
     dependencies:
-      "@visactor/vrender-core": 0.19.0
-      "@visactor/vrender-kits": 0.19.0
-      "@visactor/vscale": 0.17.5
-      "@visactor/vutils": 0.18.6
+      "@visactor/vrender-core": 0.19.11
+      "@visactor/vrender-kits": 0.19.11
+      "@visactor/vscale": 0.18.9
+      "@visactor/vutils": 0.18.9
 
-  "@visactor/vrender-core@0.19.0":
+  "@visactor/vrender-core@0.19.11":
     dependencies:
-      "@visactor/vutils": 0.18.6
+      "@visactor/vutils": 0.18.9
       color-convert: 2.0.1
 
-  "@visactor/vrender-kits@0.19.0":
+  "@visactor/vrender-kits@0.19.11":
     dependencies:
       "@resvg/resvg-js": 2.4.1
-      "@visactor/vrender-core": 0.19.0
-      "@visactor/vutils": 0.18.6
+      "@visactor/vrender-core": 0.19.11
+      "@visactor/vutils": 0.18.9
       roughjs: 4.5.2
 
-  "@visactor/vscale@0.17.5":
+  "@visactor/vscale@0.18.9":
     dependencies:
-      "@visactor/vutils": 0.17.5
+      "@visactor/vutils": 0.18.9
 
-  "@visactor/vscale@0.18.6":
+  "@visactor/vutils-extension@1.11.4":
     dependencies:
-      "@visactor/vutils": 0.18.6
+      "@visactor/vdataset": 0.18.9
+      "@visactor/vutils": 0.18.9
 
-  "@visactor/vutils-extension@1.11.0(@visactor/vrender-components@0.19.0)(@visactor/vrender-core@0.19.0)":
-    dependencies:
-      "@visactor/vdataset": 0.18.6
-      "@visactor/vrender-components": 0.19.0
-      "@visactor/vrender-core": 0.19.0
-      "@visactor/vscale": 0.18.6
-      "@visactor/vutils": 0.18.6
-
-  "@visactor/vutils@0.17.5":
-    dependencies:
-      "@turf/helpers": 6.5.0
-      "@turf/invariant": 6.5.0
-      eventemitter3: 4.0.7
-
-  "@visactor/vutils@0.18.6":
+  "@visactor/vutils@0.18.9":
     dependencies:
       "@turf/helpers": 6.5.0
       "@turf/invariant": 6.5.0
@@ -6807,7 +6789,7 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
-  cosmiconfig-typescript-loader@5.0.0(@types/node@20.11.20)(cosmiconfig@8.3.6)(typescript@5.3.3):
+  cosmiconfig-typescript-loader@5.0.0(@types/node@20.11.20)(cosmiconfig@8.3.6(typescript@5.3.3))(typescript@5.3.3):
     dependencies:
       "@types/node": 20.11.20
       cosmiconfig: 8.3.6(typescript@5.3.3)
@@ -6820,6 +6802,7 @@ snapshots:
       js-yaml: 4.1.0
       parse-json: 5.2.0
       path-type: 4.0.0
+    optionalDependencies:
       typescript: 5.3.3
 
   cross-spawn@7.0.3:
@@ -7059,11 +7042,12 @@ snapshots:
       "@typescript-eslint/parser": 6.21.0(eslint@8.57.0)(typescript@5.3.3)
       eslint: 8.57.0
       eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@6.21.0)(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1)(eslint@8.57.0)
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.0.2)(eslint@8.57.0)
+      eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1)(eslint@8.57.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.0.2(eslint@8.57.0)(typescript@5.3.3))(eslint@8.57.0)
       eslint-plugin-jsx-a11y: 6.8.0(eslint@8.57.0)
       eslint-plugin-react: 7.33.2(eslint@8.57.0)
       eslint-plugin-react-hooks: 4.6.0(eslint@8.57.0)
+    optionalDependencies:
       typescript: 5.3.3
     transitivePeerDependencies:
       - eslint-import-resolver-webpack
@@ -7081,13 +7065,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.21.0)(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1)(eslint@8.57.0):
+  eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1)(eslint@8.57.0):
     dependencies:
       debug: 4.3.4
       enhanced-resolve: 5.15.0
       eslint: 8.57.0
-      eslint-module-utils: 2.8.0(@typescript-eslint/parser@6.21.0)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.0.2)(eslint@8.57.0)
+      eslint-module-utils: 2.8.0(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1)(eslint@8.57.0))(eslint@8.57.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.0.2(eslint@8.57.0)(typescript@5.3.3))(eslint@8.57.0)
       fast-glob: 3.3.2
       get-tsconfig: 4.7.2
       is-core-module: 2.13.1
@@ -7098,28 +7082,29 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-module-utils@2.8.0(@typescript-eslint/parser@6.21.0)(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0):
+  eslint-module-utils@2.8.0(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1)(eslint@8.57.0))(eslint@8.57.0):
     dependencies:
+      debug: 3.2.7
+    optionalDependencies:
       "@typescript-eslint/parser": 6.21.0(eslint@8.57.0)(typescript@5.3.3)
-      debug: 3.2.7
       eslint: 8.57.0
       eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@6.21.0)(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1)(eslint@8.57.0)
+      eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1)(eslint@8.57.0)
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.8.0(@typescript-eslint/parser@7.0.2)(eslint-import-resolver-node@0.3.9)(eslint@8.57.0):
+  eslint-module-utils@2.8.0(@typescript-eslint/parser@7.0.2(eslint@8.57.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.9)(eslint@8.57.0):
     dependencies:
-      "@typescript-eslint/parser": 7.0.2(eslint@8.57.0)(typescript@5.3.3)
       debug: 3.2.7
+    optionalDependencies:
+      "@typescript-eslint/parser": 7.0.2(eslint@8.57.0)(typescript@5.3.3)
       eslint: 8.57.0
       eslint-import-resolver-node: 0.3.9
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.0.2)(eslint@8.57.0):
+  eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.0.2(eslint@8.57.0)(typescript@5.3.3))(eslint@8.57.0):
     dependencies:
-      "@typescript-eslint/parser": 7.0.2(eslint@8.57.0)(typescript@5.3.3)
       array-includes: 3.1.7
       array.prototype.findlastindex: 1.2.4
       array.prototype.flat: 1.3.2
@@ -7128,7 +7113,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.57.0
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.8.0(@typescript-eslint/parser@7.0.2)(eslint-import-resolver-node@0.3.9)(eslint@8.57.0)
+      eslint-module-utils: 2.8.0(@typescript-eslint/parser@7.0.2(eslint@8.57.0)(typescript@5.3.3))(eslint-import-resolver-node@0.3.9)(eslint@8.57.0)
       hasown: 2.0.1
       is-core-module: 2.13.1
       is-glob: 4.0.3
@@ -7138,6 +7123,8 @@ snapshots:
       object.values: 1.1.7
       semver: 6.3.1
       tsconfig-paths: 3.15.0
+    optionalDependencies:
+      "@typescript-eslint/parser": 7.0.2(eslint@8.57.0)(typescript@5.3.3)
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
@@ -7698,7 +7685,7 @@ snapshots:
   jiti@1.21.0: {}
 
   jotai@2.7.2(@types/react@18.2.58)(react@18.2.0):
-    dependencies:
+    optionalDependencies:
       "@types/react": 18.2.58
       react: 18.2.0
 
@@ -7905,7 +7892,7 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
-  next@14.1.0(react-dom@18.2.0)(react@18.2.0):
+  next@14.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       "@next/env": 14.1.0
       "@swc/helpers": 0.5.2
@@ -8123,8 +8110,9 @@ snapshots:
   postcss-load-config@4.0.2(postcss@8.4.35):
     dependencies:
       lilconfig: 3.1.1
-      postcss: 8.4.35
       yaml: 2.4.0
+    optionalDependencies:
+      postcss: 8.4.35
 
   postcss-mixins@9.0.4(postcss@8.4.35):
     dependencies:
@@ -8172,19 +8160,21 @@ snapshots:
 
   prettier-plugin-packagejson@2.4.12(prettier@3.2.5):
     dependencies:
-      prettier: 3.2.5
       sort-package-json: 2.8.0
       synckit: 0.9.0
+    optionalDependencies:
+      prettier: 3.2.5
 
   prettier-plugin-prisma@5.0.0(prettier@3.2.5):
     dependencies:
       "@prisma/prisma-schema-wasm": 4.17.0-26.6b0aef69b7cdfc787f822ecd7cdc76d5f1991584
       prettier: 3.2.5
 
-  prettier-plugin-tailwindcss@0.5.11(@trivago/prettier-plugin-sort-imports@4.3.0)(prettier@3.2.5):
+  prettier-plugin-tailwindcss@0.5.11(@trivago/prettier-plugin-sort-imports@4.3.0(prettier@3.2.5))(prettier@3.2.5):
     dependencies:
-      "@trivago/prettier-plugin-sort-imports": 4.3.0(prettier@3.2.5)
       prettier: 3.2.5
+    optionalDependencies:
+      "@trivago/prettier-plugin-sort-imports": 4.3.0(prettier@3.2.5)
 
   prettier@3.2.5: {}
 
@@ -8216,7 +8206,7 @@ snapshots:
 
   react-is@18.2.0: {}
 
-  react-number-format@5.3.4(react-dom@18.2.0)(react@18.2.0):
+  react-number-format@5.3.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       prop-types: 15.8.1
       react: 18.2.0
@@ -8224,28 +8214,31 @@ snapshots:
 
   react-remove-scroll-bar@2.3.6(@types/react@18.2.58)(react@18.2.0):
     dependencies:
-      "@types/react": 18.2.58
       react: 18.2.0
       react-style-singleton: 2.2.1(@types/react@18.2.58)(react@18.2.0)
       tslib: 2.6.2
+    optionalDependencies:
+      "@types/react": 18.2.58
 
   react-remove-scroll@2.5.9(@types/react@18.2.58)(react@18.2.0):
     dependencies:
-      "@types/react": 18.2.58
       react: 18.2.0
       react-remove-scroll-bar: 2.3.6(@types/react@18.2.58)(react@18.2.0)
       react-style-singleton: 2.2.1(@types/react@18.2.58)(react@18.2.0)
       tslib: 2.6.2
       use-callback-ref: 1.3.2(@types/react@18.2.58)(react@18.2.0)
       use-sidecar: 1.1.2(@types/react@18.2.58)(react@18.2.0)
+    optionalDependencies:
+      "@types/react": 18.2.58
 
   react-style-singleton@2.2.1(@types/react@18.2.58)(react@18.2.0):
     dependencies:
-      "@types/react": 18.2.58
       get-nonce: 1.0.1
       invariant: 2.2.4
       react: 18.2.0
       tslib: 2.6.2
+    optionalDependencies:
+      "@types/react": 18.2.58
 
   react-textarea-autosize@8.5.3(@types/react@18.2.58)(react@18.2.0):
     dependencies:
@@ -8472,7 +8465,7 @@ snapshots:
 
   slice-source@0.4.1: {}
 
-  sonner@1.4.41(react-dom@18.2.0)(react@18.2.0):
+  sonner@1.4.41(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -8793,9 +8786,10 @@ snapshots:
 
   use-callback-ref@1.3.2(@types/react@18.2.58)(react@18.2.0):
     dependencies:
-      "@types/react": 18.2.58
       react: 18.2.0
       tslib: 2.6.2
+    optionalDependencies:
+      "@types/react": 18.2.58
 
   use-composed-ref@1.3.0(react@18.2.0):
     dependencies:
@@ -8803,21 +8797,24 @@ snapshots:
 
   use-isomorphic-layout-effect@1.1.2(@types/react@18.2.58)(react@18.2.0):
     dependencies:
-      "@types/react": 18.2.58
       react: 18.2.0
+    optionalDependencies:
+      "@types/react": 18.2.58
 
   use-latest@1.2.1(@types/react@18.2.58)(react@18.2.0):
     dependencies:
-      "@types/react": 18.2.58
       react: 18.2.0
       use-isomorphic-layout-effect: 1.1.2(@types/react@18.2.58)(react@18.2.0)
+    optionalDependencies:
+      "@types/react": 18.2.58
 
   use-sidecar@1.1.2(@types/react@18.2.58)(react@18.2.0):
     dependencies:
-      "@types/react": 18.2.58
       detect-node-es: 1.1.0
       react: 18.2.0
       tslib: 2.6.2
+    optionalDependencies:
+      "@types/react": 18.2.58
 
   util-deprecate@1.0.2: {}
 
