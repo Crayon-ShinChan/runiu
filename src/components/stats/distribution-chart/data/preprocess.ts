@@ -51,6 +51,8 @@ export const preprocess = (roundData: Round[]): DistributionData[] => {
     }, 0);
     if (numPeople === 0) return null;
 
+    const dateString = round.distributionAsOnDate?.toISOString().slice(0, 10);
+
     return {
       data: [
         {
@@ -65,7 +67,7 @@ export const preprocess = (roundData: Round[]): DistributionData[] => {
         },
         {
           id: "date",
-          values: [{ date: round.date?.toDateString() }],
+          values: [{ date: dateString }],
         },
       ],
     };
