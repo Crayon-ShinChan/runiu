@@ -86,6 +86,13 @@ export const getSpec = (data: [DistributionData, ...DistributionData[]]) => {
           },
         },
       },
+      {
+        orient: "bottom",
+        title: {
+          visible: true,
+          text: "CRS Score",
+        },
+      },
     ],
     player: {
       type: "continuous",
